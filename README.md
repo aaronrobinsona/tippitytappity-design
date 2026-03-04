@@ -20,4 +20,21 @@ classDiagram
         + add_badge(title: string)
         + get_badges() vector~string~
   }
-```
+
+## Data Model 2
+--mermaid
+classDiagram
+  MusicQuiz <|-- NoteInput
+    class MusicQuiz{
+      - noteanalyze: string
+      - question: string
+      - solution: string
+      + gradecompare(): bool
+}
+    class NoteInput{
+      -notecapture(): bool
+      -notereturn(): bool
+}
+
+    -
+  
