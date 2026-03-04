@@ -2,6 +2,10 @@
 
 tippitytappity is a program to practice typing
 
+# tippitytappity-design
+
+tippitytappity is a program to practice typing
+
 
 ## Data model
 
@@ -21,4 +25,3 @@ classDiagram
 }
 
     -
-  
