@@ -13,7 +13,7 @@ classDiagram
         - email: string
         - password: string
         + login(user: string, pass: string) boolean
-        + get_email() string
+        + get_email(): string
   }
   class ExampleChild{
         - badges vector~string~
@@ -26,14 +26,14 @@ classDiagram
 classDiagram
   MusicQuiz <|-- NoteInput
     class MusicQuiz{
-      - noteanalyze: string
       - question: string
       - solution: string
+      + noteanalyze(): bool
       + gradecompare(): bool
 }
     class NoteInput{
-      -notecapture(): bool
-      -notereturn(): bool
+      + notecapture(): bool
+      + notereturn(): bool
 }
 
     -
