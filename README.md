@@ -5,16 +5,27 @@ tippitytappity is a program to practice typing
 ## Data Model 
 ```mermaid
 classDiagram
-  MusicQuiz <|-- NoteInput
-    class MusicQuiz{
+  TypeTest <|-- TypePhrases
+  UserAccounts <|-- UserLog
+  UserLog <|-- TypeTest
+    class TypeTest{
       - question: string
       - solution: string
-      + noteanalyze(): bool
+      + typeanalyze(): bool
       + gradecompare(): bool
 }
-    class NoteInput{
-      + notecapture(): bool
-      + notereturn(): bool
+    class TypePhrases{
+      + typecapture(): bool
+      + typereturn(): string
+}
+    class UserLog{
+      - userid: integer
+      - name: string
+      - userscore: string
+  }
+    class UserAccounts{
+      - userlist: array
+      - rankusers: array
 }
 
 ```
