@@ -3,7 +3,7 @@
 tippitytappity is a program to practice typing
 
 ## Data Model 
---mermaid
+```mermaid
 classDiagram
   MusicQuiz <|-- NoteInput
     class MusicQuiz{
@@ -17,4 +17,4 @@ classDiagram
       + notereturn(): bool
 }
 
-    -
+```
